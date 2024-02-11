@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(De)codificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+    <section class="box_conteudo">
+        <div class="vetor"><img src="Vector.png"></div>
+        <section class="input">
+            <textarea id="inputText" placeholder="Digite seu texto..." class="campo__texto"></textarea>
+            <div class="alerta_validacao">
+                <img class="alerta_validacao_imagem" src="exclamacao.png">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="container__botoes">
+                <button onclick="criptografar()" id="criptografar" class="botao__um">Criptografar</button>
+                <button onclick="descriptografar()" id="descriptografar" class="botao__dois">Descriptografar</button>
+            </div>
+        </section>
+        <section class="output">
+            <div id="telaInicial" class="tela__inicial">
+                <img src="imagem.png" class="tela_inicial_imagem">
+                <b><h2 class="tela_inicial_texto1">Nenhuma mensagem encontrada</h2></b>
+                <p class="tela_inicial_texto2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div id="telaResultado">
+                <h3 id="resultado" class="texto__resultado"></h3>
+                <button onclick="copiarTexto()" id="copiar" class="botao__tres">Copiar</button>
+            </div>
+        </section>
+    </section>
+    
+    <footer class="creditos">
+        <p>Developed by <a href=https://github.com/natzanchetta target="_blank" class="link__git">Natália Vargas Zanchetta<a>, as a challenge for Alura ONE - T6 | 2024</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
