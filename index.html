@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="box_conteudo">
-        <div class="vetor"><img src="Vector.png"></div>
+        <div><img src="Vector.png" class="vetor"></div>
         <section class="input">
             <textarea id="inputText" placeholder="Digite seu texto..." class="campo__texto"></textarea>
             <div class="alerta_validacao">
@@ -27,7 +27,7 @@
                 <b><h2 class="tela_inicial_texto1">Nenhuma mensagem encontrada</h2></b>
                 <p class="tela_inicial_texto2">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <div id="telaResultado">
+            <div id="telaResultado" class="tela__resultado">
                 <h3 id="resultado" class="texto__resultado"></h3>
                 <button onclick="copiarTexto()" id="copiar" class="botao__tres">Copiar</button>
             </div>
@@ -39,5 +39,6 @@
     </footer>
 
     <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
