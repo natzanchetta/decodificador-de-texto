@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 105vh; /* 105% viewport height */
+    height: 100vh; /* 100% viewport height */
     background-color: #F3F5FC;
     box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ body {
     height: 4.68vh;
     width: 1.5vw;
     margin-top: 3.90vh;
-    margin-left: 5.83vw;
+    margin-left: 4vw;
     margin-right: 7.5vw;
 }
 
@@ -48,6 +48,7 @@ body {
     margin-left: 5.55vw;
     margin-top: 3.90vh;
     margin-bottom: 3.90vh;
+    margin-right: 4vw;
     height: 92.18vh;
     width: 27.7vw;
 }
@@ -171,15 +172,24 @@ body {
     font-family:'Inter', sans-serif;
   }
 
-.creditos {
+.rodape {
+    display: flex;
     font-family: 'Inter', sans-serif;
-    color: #0A3871;
-    margin-left: 5.83vw;
-    margin-bottom: 3.90vh;
-    font-size: 0.60rem;
+    color: #FFFFFF;
+    background-color: #0A3871;
+    font-size: 0.70rem;
+    padding: 0.5vw;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 1vh;
 }
 
-.link__git {
-    text-decoration: none;
-    color: #495057;
+.creditos {
+    writing-mode: vertical-rl;
+}
+
+.icon_git {
+    height: 3.12vh;
+    width: 1.5vw;
 }
