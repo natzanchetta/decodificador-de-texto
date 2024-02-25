@@ -233,12 +233,14 @@ body {
         width: 90vw;
         min-height: 10vh;
         max-height: 60vh;
-        padding-bottom: 2vh;
+        padding-bottom: 0.75vh;
     }
 
     .texto__resultado {
         min-height: 10vh;
         max-height: 50vh;
+        margin-left: 5%;
+        
     }
 
     .container__botoes {
@@ -259,15 +261,15 @@ body {
     }
 
     .botao__tres {
-        width: 95%;
+        width: 90%;
         height: 18vh;
+        margin-left: 5%;
     }
 
     .rodape {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 1vh;
     }
 
     .creditos {
@@ -277,5 +279,58 @@ body {
     .icon_git {
         width: auto;
         height: 2.7vh;
+    }
+}
+
+@media (max-width: 600px) {    
+    
+    .campo__texto {
+        margin-left: 5vw;
+    }
+
+    .alerta_validacao {
+        margin-left: 5vw;
+    }
+
+    .container__botoes {
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        gap: 15%;
+        margin-top: 5%;
+        margin-left: 5vw;
+    }
+
+    .output {
+        margin-left: 5vw;
+    }
+
+    .tela__inicial {
+        height: 30vh;
+    }
+
+    .tela__resultado {
+        padding-bottom: 0.5vh;
+        margin-left: 3vw;
+    }
+
+    .texto__resultado {
+        width: 90%;
+    }
+
+    .botao__um {
+        width: 90vw;
+        height: 25vh;
+    }
+    
+    .botao__dois {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .botao__tres {
+        width: 90%;
+        height: 18vh;
+        margin-left: 3.2%;
     }
 }
