@@ -185,10 +185,14 @@ body {
         flex-direction: column;
     }
 
+    .vetor {
+        width: auto;
+        height: 4.6vh;
+    }
     .campo__texto {
         width: 90vw;
         height: 47vh;
-        margin-top: 16.40vh;
+        margin-top: 12vh;
         margin-bottom: 4.68vh;
         margin-left: 4vw;
     }
@@ -197,6 +201,11 @@ body {
         height: 1.75vh;
         margin-left: 4vw;
     } 
+
+    .alerta_validacao_imagem {
+        width: auto;
+        height: 1.80vh;
+    }
 
     .output {
         display: flex;
@@ -257,9 +266,16 @@ body {
     .rodape {
         flex-direction: row;
         justify-content: center;
+        align-items: center;
+        padding-top: 1vh;
     }
 
     .creditos {
         writing-mode: horizontal-tb;
+    }
+
+    .icon_git {
+        width: auto;
+        height: 2.7vh;
     }
 }
