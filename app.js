@@ -53,7 +53,7 @@ function escondeTelaResultado() {
   }
 
 function mostraTelaResultado() {
-    document.getElementById("telaResultado").style.display = "block";
+    document.getElementById("telaResultado").style.display = "flex";
 }
 
 function escondeTelaInicial() {
@@ -61,7 +61,7 @@ function escondeTelaInicial() {
 }
 
 function mostraTelaInicial() {
-    document.getElementById("telaInicial").style.display = "block";
+    document.getElementById("telaInicial").style.display = "flex";
 }
 
 function copiarTexto() {

@@ -6,29 +6,24 @@
 }
 
 body {
-    height: 100vh; /* 100% viewport height */
+    height: 100vh;  /* 100% viewport height */
     background-color: #F3F5FC;
     box-sizing: border-box;
+    display: flex;
 }
 
 .vetor {
-    height: 4.68vh;
     width: 1.5vw;
     margin-top: 3.90vh;
     margin-left: 4vw;
     margin-right: 7.5vw;
 }
 
-.box_conteudo {
-    display: flex;
-}
-
 .campo__texto {
-    display: flex;
     font-family: 'Inter', sans-serif;
     font-size: 1.75rem;
     width: 47.22vw;
-    height: 62.01vh;
+    height: 60vh;
     border: 0;
     color: #0A3871;
     margin-top: 16.40vh;
@@ -38,11 +33,21 @@ body {
     resize: none;
 }
 
-.output {
+.alerta_validacao {
     display: flex;
     font-family: 'Inter', sans-serif;
-    flex-direction: column;
-    align-items: center; 
+    font-size: 0.6rem;
+    align-items: center;
+    height: 1.75vh;
+} 
+
+.alerta_validacao_imagem {
+    width: 0.80vw;
+    margin-right: 0.50vw;
+}
+
+.output {
+    font-family: 'Inter', sans-serif;
     background-color: #FFFFFF;
     border-radius: 32px;
     margin-left: 5.55vw;
@@ -51,12 +56,48 @@ body {
     margin-right: 4vw;
     height: 92.18vh;
     width: 27.7vw;
+    box-shadow: 2px 2px 5px #D8DFE8;
+}
+
+.tela__inicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    gap: 2%;
+}
+
+.tela_inicial_imagem {
+    width: 85%;
+    margin-right: 2.22vw;
+    margin-left: 2.22vw;
+}
+
+.tela_inicial_texto1 {
+    color: #343A40;
+    font-size: 1.25rem;
+    margin-left: 2.22vw;
+    margin-right: 2.22vw;
+}
+
+.tela_inicial_texto2 {
+    color: #495057;
+    font-size: 0.85rem;
+    margin-left: 2.22vw;
+    margin-right: 2.22vw;
+    line-height: 150%;
+}
+
+.tela__resultado {
+    display: flex;
+    flex-direction: column;
 }
 
 .texto__resultado {
     font-size: 1.25rem;
     color: #495057;
-    width: 23.33vw;
     height: 73vh;
     margin-left: 2.22vw;
     margin-top: 4vh;
@@ -65,62 +106,9 @@ body {
     overflow-y: auto;
 }
 
-.tela__inicial {
-    display: flex;
-    font-family: 'Inter', sans-serif;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-}
-
-.tela_inicial_imagem {
-    width: 23vw;
-    height: 40vh;
-    margin-top: 16.5vh;
-    margin-right: 2.22vw;
-    margin-left: 2.22vw;
-}
-
-.tela_inicial_texto1 {
-    color: #343A40;
-    font-size: 1.25rem;
-    text-align: center;
-    margin-left: 2.22vw;
-    margin-right: 2.22vw;
-    margin-top: 3.12vh;
-    height: 5.76vh;
-}
-
-.tela_inicial_texto2 {
-    color: #495057;
-    font-size: 0.85rem;
-    text-align: center;
-    margin-left: 2.22vw;
-    margin-right: 2.22vw;
-    line-height: 150%;
-    margin-top: 3.5vh;
-    height: 4.68vh;
-    
-}
-
-.alerta_validacao {
-    display: flex;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.6rem;
-    align-items: center;
-    height: 1.75vh;
-    width: 17.5vw;
-} 
-
-.alerta_validacao_imagem {
-    width: 0.70vw;
-    height: 1.56vh;
-    margin-right: 0.50vw;
-}
-
 .container__botoes {
     width: 47.22vw;
-    height: 6.54vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     margin-bottom: 7vh;
@@ -129,7 +117,6 @@ body {
 
 .botao__um {
     width: 22.77vw;
-    height: 6.54vh;
     background-color: #0A3871;
     color: #FFFFFF;
     border-radius: 16px;
@@ -142,7 +129,6 @@ body {
 
 .botao__dois {
     width: 22.77vw;
-    height: 6.54vh;
     background-color: #D8DFE8;
     color: #0A3871;
     border-radius: 16px;
@@ -190,6 +176,90 @@ body {
 }
 
 .icon_git {
-    height: 3.12vh;
     width: 1.5vw;
+}
+
+@media (max-width: 1300px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .campo__texto {
+        width: 90vw;
+        height: 47vh;
+        margin-top: 16.40vh;
+        margin-bottom: 4.68vh;
+        margin-left: 4vw;
+    }
+
+    .alerta_validacao {
+        height: 1.75vh;
+        margin-left: 4vw;
+    } 
+
+    .output {
+        display: flex;
+        width: 90vw;
+        margin-left: 4vw;
+        margin-top: 2vh;
+        margin-bottom: 4.5vh;
+        margin-right: 4vw;
+    }
+
+    .tela__inicial {
+        height: 20vh;
+        width: 100%;
+        gap: 8%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .tela_inicial_imagem {
+        display: none;
+    }
+
+    .tela__resultado {
+        display: flex;
+        width: 90vw;
+        min-height: 10vh;
+        max-height: 60vh;
+        padding-bottom: 2vh;
+    }
+
+    .texto__resultado {
+        min-height: 10vh;
+        max-height: 50vh;
+    }
+
+    .container__botoes {
+        width: 90vw;
+        height: 10vh;
+        margin-left: 4vw;
+        margin-bottom: 7vh;
+        margin-top: 1.56vh;
+    }
+
+    .botao__um {
+        width: 48.5%;
+    }
+    
+    .botao__dois {
+        width: 48.5%;
+        background-color: #F3F5FC;
+    }
+
+    .botao__tres {
+        width: 95%;
+        height: 18vh;
+    }
+
+    .rodape {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .creditos {
+        writing-mode: horizontal-tb;
+    }
 }
