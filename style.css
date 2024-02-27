@@ -305,6 +305,7 @@ body {
     }
     
     .texto__resultado {
+        width: 90%;
         margin-left: 4.5vw;
     }
 
