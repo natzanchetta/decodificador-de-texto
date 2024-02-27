@@ -204,7 +204,7 @@ body {
 
     .alerta_validacao_imagem {
         width: auto;
-        height: 1.80vh;
+        height: 1.7vh;
     }
 
     .output {
@@ -231,16 +231,12 @@ body {
     .tela__resultado {
         display: flex;
         width: 90vw;
-        min-height: 10vh;
-        max-height: 60vh;
         padding-bottom: 0.75vh;
     }
 
     .texto__resultado {
-        min-height: 10vh;
+        height: auto !important;
         max-height: 50vh;
-        margin-left: 5%;
-        
     }
 
     .container__botoes {
@@ -261,9 +257,8 @@ body {
     }
 
     .botao__tres {
-        width: 90%;
-        height: 18vh;
-        margin-left: 5%;
+        width: 95%;
+        height: 10vh;
     }
 
     .rodape {
@@ -278,18 +273,27 @@ body {
 
     .icon_git {
         width: auto;
-        height: 2.7vh;
+        height: 2vh;
     }
 }
 
 @media (max-width: 600px) {    
 
+    .campo__texto {
+        height: 41vh;
+        margin-top: 8vh;
+    }
+
     .container__botoes {
         display: flex;
         flex-direction: column;
-        height: 25vh;
-        gap: 15%;
+        height: 20vh;
+        gap: 13%;
         margin-top: 5%;
+    }
+
+    .output {
+        margin-top: 0;
     }
 
     .tela__inicial {
@@ -317,7 +321,7 @@ body {
 
     .botao__tres {
         width: 90%;
-        height: 18vh;
+        height: 8vh;
         margin-left: 3.2%;
     }
 }
