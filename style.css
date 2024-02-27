@@ -302,11 +302,10 @@ body {
 
     .tela__resultado {
         padding-bottom: 0.5vh;
-        margin-left: 3vw;
     }
-
+    
     .texto__resultado {
-        width: 90%;
+        margin-left: 4.5vw;
     }
 
     .botao__um {
@@ -322,6 +321,6 @@ body {
     .botao__tres {
         width: 90%;
         height: 8vh;
-        margin-left: 3.2%;
+        margin-left: 4.5vw;
     }
 }
