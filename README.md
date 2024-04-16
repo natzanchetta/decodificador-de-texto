@@ -1,2 +1,2 @@
-Projeto desenvolvido como uma challenge para o Alura ONE, Turma 6.
-#challengeonedecodificador5
+Projeto desenvolvido integralmente por mim, como uma challenge para o Alura ONE, Turma 6.
+#challengeonedecodificador
